@@ -1,1 +1,1 @@
-this is a portion of code fro /nauka part of the webiste
+this is a portion of code for /calendar part of the webiste

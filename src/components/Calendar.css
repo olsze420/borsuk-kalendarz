@@ -1,0 +1,99 @@
+/* Calendar.css */
+.calendar-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .month-display {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .nav-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .weekdays-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    margin-bottom: 8px;
+  }
+  
+  .weekday-cell {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #eaeaea;
+    background-color: #f7f7f7;
+  }
+  
+  .calendar-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .calendar-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    margin-bottom: 2px;
+  }
+  
+  .calendar-cell {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    min-height: 80px;
+  }
+  
+  .calendar-cell:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .empty-cell {
+    background-color: #f7f7f7;
+    cursor: default;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .calendar-cell {
+      min-height: 50px;
+    }
+    
+    .month-display {
+      font-size: 16px;
+    }
+  }
